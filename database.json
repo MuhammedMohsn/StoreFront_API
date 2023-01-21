@@ -1,0 +1,16 @@
+{ "defaultEnv":{"ENV":"ENV"},
+    "dev": {
+      "driver": "pg",
+      "host": {"ENV":"postgres_host"},
+      "database": {"ENV":"postgres_DB"},
+      "user":{"ENV":"postgres_user"}, 
+      "password": {"ENV":"postgres_password"}
+    },
+    "test": {
+      "driver": "pg",
+      "host": {"ENV":"postgres_host"},
+      "database": {"ENV":"postgres_test_DB"},
+      "user": {"ENV":"postgres_user"},
+      "password": {"ENV":"postgres_password"}
+    }
+  }
